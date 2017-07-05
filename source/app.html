@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<style type="text/css">
+		#search {
+			position: fixed;
+			right:200px;
+		}
+
+		#searchResult {
+			position: fixed;
+			right: 200px;
+		}
+	</style>
+</head>
+<body>
+
+
+
+
+	<form>
+		<label> <b>Create a file or folder </b> </label>
+		<input type="text" name="fname" id="fname" value="" required="">
+		<input type="submit" name="create" id="createButton" value="Create">
+		<input type="submit" name="back" id="backButton" value="Back">
+	</form>
+
+	<form id="search">
+		<label> <b>Search:</b> </label>
+		<input type="text" name="search" id="searchText" value="" required="">
+		<input type="submit" name="searchButton" id="searchButton" value="Search">
+	</form>
+
+	<br><div id="searchResult">
+		<ul id="search_list">
+
+		</ul>
+
+	</div>
+
+	<label > <b>Path:</b> </label>
+	<div id="pathName">
+
+	</div>
+
+
+
+	<div id="folders">
+		<ul id="folders_list">
+
+		</ul>
+
+	</div>
+
+
+
+
+	<div id="explorer-space"></div>
+	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
+	<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+
+
+
+<script src="app.js"></script>
+</body>
+</html>
